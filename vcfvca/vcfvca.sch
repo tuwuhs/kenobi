@@ -20350,7 +20350,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="150k"/>
 <part name="VR6" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="B64Y" package3d_urn="urn:adsk.eagle:package:22690/1" value="100k"/>
 <part name="VR7" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="B64Y" package3d_urn="urn:adsk.eagle:package:22690/1" value="100k"/>
-<part name="VR8" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="B64Y" package3d_urn="urn:adsk.eagle:package:22690/1"/>
+<part name="VR8" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="B64Y" package3d_urn="urn:adsk.eagle:package:22690/1" value="100k"/>
 <part name="J2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="FREQ"/>
 <part name="J3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RES"/>
 <part name="J4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="AMP"/>
@@ -20943,11 +20943,7 @@ Full-scale: 1.086 mA</text>
 <nets>
 <net name="+15V" class="0">
 <segment>
-<pinref part="J1" gate="G$3" pin="1"/>
-<wire x1="248.92" y1="241.3" x2="254" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="254" y1="241.3" x2="254" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="+15V" pin="+15V"/>
-<wire x1="254" y1="248.92" x2="271.78" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="P" pin="V+"/>
 <wire x1="271.78" y1="248.92" x2="279.4" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="248.92" x2="289.56" y2="248.92" width="0.1524" layer="91"/>
@@ -20960,7 +20956,6 @@ Full-scale: 1.086 mA</text>
 <wire x1="345.44" y1="248.92" x2="353.06" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="248.92" x2="360.68" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="248.92" x2="360.68" y2="243.84" width="0.1524" layer="91"/>
-<junction x="271.78" y="248.92"/>
 <pinref part="IC4" gate="P" pin="V+"/>
 <wire x1="353.06" y1="243.84" x2="353.06" y2="248.92" width="0.1524" layer="91"/>
 <junction x="353.06" y="248.92"/>
@@ -20988,6 +20983,15 @@ Full-scale: 1.086 mA</text>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="246.38" x2="279.4" y2="248.92" width="0.1524" layer="91"/>
 <junction x="279.4" y="248.92"/>
+<wire x1="254" y1="241.3" x2="254" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$3" pin="1"/>
+<wire x1="248.92" y1="241.3" x2="254" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="264.16" y1="246.38" x2="264.16" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="254" y1="248.92" x2="264.16" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="248.92" x2="271.78" y2="248.92" width="0.1524" layer="91"/>
+<junction x="264.16" y="248.92"/>
+<junction x="271.78" y="248.92"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="1" pin="D"/>
@@ -21225,7 +21229,6 @@ Full-scale: 1.086 mA</text>
 <wire x1="30.48" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="38.1" y1="40.64" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
@@ -21264,13 +21267,6 @@ Full-scale: 1.086 mA</text>
 <wire x1="358.14" y1="177.8" x2="350.52" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="350.52" y1="177.8" x2="350.52" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<junction x="264.16" y="248.92"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="264.16" y1="246.38" x2="264.16" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-15V" class="0">
@@ -21998,9 +21994,7 @@ Full-scale: 1.086 mA</text>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="210.82" x2="10.16" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="210.82" x2="17.78" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="210.82" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="210.82" x2="17.78" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -22041,6 +22035,24 @@ Full-scale: 1.086 mA</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,106.68,208.28,IC1A,BUFF/IN,,,,"/>
+<approved hash="202,1,190.5,195.58,IC1B,BUFF/IN,,,,"/>
+<approved hash="104,1,330.2,243.84,IC1P,V+,+15V,,,"/>
+<approved hash="104,1,330.2,228.6,IC1P,V-,-15V,,,"/>
+<approved hash="104,1,337.82,243.84,IC2P,V+,+15V,,,"/>
+<approved hash="104,1,337.82,228.6,IC2P,V-,-15V,,,"/>
+<approved hash="202,1,101.6,127,IC3A,BUFF/IN,,,,"/>
+<approved hash="202,1,185.42,114.3,IC3B,BUFF/IN,,,,"/>
+<approved hash="104,1,345.44,243.84,IC3P,V+,+15V,,,"/>
+<approved hash="104,1,345.44,228.6,IC3P,V-,-15V,,,"/>
+<approved hash="202,1,294.64,104.14,IC4A,BUFF/IN,,,,"/>
+<approved hash="202,1,302.26,177.8,IC4B,BUFF/IN,,,,"/>
+<approved hash="104,1,353.06,243.84,IC4P,V+,+15V,,,"/>
+<approved hash="104,1,353.06,228.6,IC4P,V-,-15V,,,"/>
+<approved hash="104,1,360.68,243.84,IC5P,V+,+15V,,,"/>
+<approved hash="104,1,360.68,228.6,IC5P,V-,-15V,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
