@@ -22039,12 +22039,12 @@ Max gain: 3.526 x ?</text>
 </sheets>
 <errors>
 <approved hash="202,1,106.68,208.28,IC1A,BUFF/IN,,,,"/>
-<approved hash="202,1,190.5,195.58,IC1B,BUFF/IN,,,,"/>
+<approved hash="202,1,101.6,127,IC1B,BUFF/IN,,,,"/>
 <approved hash="104,1,330.2,243.84,IC1P,V+,+15V,,,"/>
 <approved hash="104,1,330.2,228.6,IC1P,V-,-15V,,,"/>
 <approved hash="104,1,337.82,243.84,IC2P,V+,+15V,,,"/>
 <approved hash="104,1,337.82,228.6,IC2P,V-,-15V,,,"/>
-<approved hash="202,1,101.6,127,IC3A,BUFF/IN,,,,"/>
+<approved hash="202,1,190.5,195.58,IC3A,BUFF/IN,,,,"/>
 <approved hash="202,1,185.42,114.3,IC3B,BUFF/IN,,,,"/>
 <approved hash="104,1,345.44,243.84,IC3P,V+,+15V,,,"/>
 <approved hash="104,1,345.44,228.6,IC3P,V-,-15V,,,"/>
