@@ -20340,7 +20340,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100k 1%"/>
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="301k 1%"/>
 <part name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
-<part name="R50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22k"/>
+<part name="R50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
 <part name="R51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
 <part name="VR5" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_US-" device="S63P" package3d_urn="urn:adsk.eagle:package:22705/1" value="10k"/>
 <part name="Q10" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="2N3906" device="" package3d_urn="urn:adsk.eagle:package:29733/2"/>
@@ -20387,9 +20387,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="27.94" y="50.8" size="1.778" layer="91">CV 0~5 volts</text>
 <text x="284.48" y="50.8" size="1.778" layer="91">CV 0~5 volts</text>
 <text x="269.24" y="132.08" size="1.778" layer="91">VR5 at middle
-Full-scale: 269 uA</text>
+Full-scale: 565 uA
+Max gain: 1.21 x</text>
 <text x="261.62" y="78.74" size="1.778" layer="91">VR4 at middle
-Full-scale: 1.086 mA</text>
+Full-scale: 1.086 mA
+Max gain: 3.526 x</text>
 <text x="129.54" y="236.22" size="1.778" layer="91">4-pole VCF</text>
 <text x="284.48" y="198.12" size="1.778" layer="91">VCA</text>
 <text x="266.7" y="124.46" size="1.778" layer="91">Resonance feedback</text>
