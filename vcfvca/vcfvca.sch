@@ -20391,7 +20391,7 @@ Full-scale: 565 uA
 Max gain: 1.21 x</text>
 <text x="261.62" y="78.74" size="1.778" layer="91">VR4 at middle
 Full-scale: 1.086 mA
-Max gain: 3.526 x</text>
+Max gain: 3.526 x ?</text>
 <text x="129.54" y="236.22" size="1.778" layer="91">4-pole VCF</text>
 <text x="284.48" y="198.12" size="1.778" layer="91">VCA</text>
 <text x="266.7" y="124.46" size="1.778" layer="91">Resonance feedback</text>
@@ -20423,7 +20423,7 @@ Max gain: 3.526 x</text>
 <instance part="IC1" gate="P" x="330.2" y="236.22" smashed="yes">
 <attribute name="NAME" x="328.168" y="235.585" size="1.778" layer="95"/>
 </instance>
-<instance part="IC1" gate="B" x="172.72" y="200.66" smashed="yes">
+<instance part="IC3" gate="A" x="172.72" y="200.66" smashed="yes">
 <attribute name="NAME" x="160.02" y="212.09" size="1.778" layer="95"/>
 <attribute name="VALUE" x="160.02" y="187.96" size="1.778" layer="96"/>
 </instance>
@@ -20448,7 +20448,7 @@ Max gain: 3.526 x</text>
 <attribute name="VALUE" x="327.66" y="20.32" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="P" x="337.82" y="236.22" smashed="yes"/>
-<instance part="IC3" gate="A" x="83.82" y="132.08" smashed="yes">
+<instance part="IC1" gate="B" x="83.82" y="132.08" smashed="yes">
 <attribute name="NAME" x="71.12" y="143.51" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="119.38" size="1.778" layer="96"/>
 </instance>
@@ -20633,14 +20633,14 @@ Max gain: 3.526 x</text>
 <attribute name="NAME" x="233.68" y="185.42" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="233.68" y="187.96" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC4" gate="B" x="284.48" y="182.88" smashed="yes">
+<instance part="IC4" gate="A" x="284.48" y="182.88" smashed="yes">
 <attribute name="NAME" x="271.78" y="194.31" size="1.778" layer="95"/>
 <attribute name="VALUE" x="271.78" y="170.18" size="1.778" layer="96"/>
 </instance>
 <instance part="IC4" gate="P" x="353.06" y="236.22" smashed="yes">
 <attribute name="NAME" x="351.028" y="235.585" size="1.778" layer="95"/>
 </instance>
-<instance part="IC4" gate="A" x="276.86" y="109.22" smashed="yes">
+<instance part="IC4" gate="B" x="276.86" y="109.22" smashed="yes">
 <attribute name="NAME" x="264.16" y="120.65" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.16" y="96.52" size="1.778" layer="96"/>
 </instance>
@@ -21155,7 +21155,7 @@ Max gain: 3.526 x</text>
 <wire x1="132.08" y1="88.9" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="A" pin="+IN"/>
+<pinref part="IC4" gate="B" pin="+IN"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="261.62" y1="106.68" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
 </segment>
@@ -21171,7 +21171,7 @@ Max gain: 3.526 x</text>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="IC4" gate="B" pin="-IN"/>
+<pinref part="IC4" gate="A" pin="-IN"/>
 <wire x1="264.16" y1="185.42" x2="269.24" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -21359,7 +21359,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="IC1" gate="B" pin="OUT"/>
+<pinref part="IC3" gate="A" pin="OUT"/>
 <pinref part="Q2" gate="1" pin="G"/>
 <wire x1="190.5" y1="200.66" x2="195.58" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -21381,7 +21381,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="IC3" gate="A" pin="OUT"/>
+<pinref part="IC1" gate="B" pin="OUT"/>
 <pinref part="Q4" gate="1" pin="G"/>
 <wire x1="101.6" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -21458,14 +21458,14 @@ Max gain: 3.526 x</text>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="170.18" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="B" pin="AMP/BIAS"/>
+<pinref part="IC3" gate="A" pin="AMP/BIAS"/>
 <wire x1="154.94" y1="193.04" x2="157.48" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="B" pin="-IN"/>
+<pinref part="IC3" gate="A" pin="-IN"/>
 <wire x1="144.78" y1="203.2" x2="147.32" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="203.2" x2="157.48" y2="203.2" width="0.1524" layer="91"/>
@@ -21479,7 +21479,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="IC1" gate="B" pin="+IN"/>
+<pinref part="IC3" gate="A" pin="+IN"/>
 <wire x1="157.48" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="198.12" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
@@ -21487,7 +21487,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="IC3" gate="A" pin="+IN"/>
+<pinref part="IC1" gate="B" pin="+IN"/>
 <wire x1="68.58" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="111.76" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
@@ -21500,7 +21500,7 @@ Max gain: 3.526 x</text>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="111.76" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="-IN"/>
+<pinref part="IC1" gate="B" pin="-IN"/>
 <wire x1="58.42" y1="114.3" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -21598,7 +21598,7 @@ Max gain: 3.526 x</text>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="IC3" gate="A" pin="AMP/BIAS"/>
+<pinref part="IC1" gate="B" pin="AMP/BIAS"/>
 <wire x1="68.58" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="139.7" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
@@ -21613,7 +21613,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="IC4" gate="A" pin="-IN"/>
+<pinref part="IC4" gate="B" pin="-IN"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="111.76" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
@@ -21624,7 +21624,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="IC4" gate="A" pin="AMP/BIAS"/>
+<pinref part="IC4" gate="B" pin="AMP/BIAS"/>
 <wire x1="261.62" y1="101.6" x2="259.08" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="93.98" x2="259.08" y2="101.6" width="0.1524" layer="91"/>
@@ -21632,7 +21632,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="IC4" gate="A" pin="OUT"/>
+<pinref part="IC4" gate="B" pin="OUT"/>
 <wire x1="294.64" y1="109.22" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="109.22" x2="302.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
@@ -21726,7 +21726,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="IC4" gate="B" pin="+IN"/>
+<pinref part="IC4" gate="A" pin="+IN"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="180.34" x2="259.08" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R34" gate="G$1" pin="1"/>
@@ -21748,7 +21748,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="IC4" gate="B" pin="AMP/BIAS"/>
+<pinref part="IC4" gate="A" pin="AMP/BIAS"/>
 <wire x1="269.24" y1="175.26" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="149.86" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
@@ -21964,7 +21964,7 @@ Max gain: 3.526 x</text>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="IC4" gate="B" pin="OUT"/>
+<pinref part="IC4" gate="A" pin="OUT"/>
 <wire x1="309.88" y1="182.88" x2="302.26" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="-IN"/>
 <wire x1="309.88" y1="182.88" x2="312.42" y2="182.88" width="0.1524" layer="91"/>
