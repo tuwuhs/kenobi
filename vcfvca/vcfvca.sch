@@ -20755,9 +20755,9 @@ Max gain: 3.526 x</text>
 <attribute name="NAME" x="105.41" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.41" y="37.338" size="1.778" layer="96"/>
 </instance>
-<instance part="R40" gate="G$1" x="116.84" y="33.02" smashed="yes" rot="R270">
-<attribute name="NAME" x="118.11" y="37.0586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.538" y="36.83" size="1.778" layer="96" rot="R270"/>
+<instance part="R40" gate="G$1" x="116.84" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.57" y="46.7614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="120.142" y="46.99" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q7" gate="1" x="137.16" y="33.02" smashed="yes">
 <attribute name="NAME" x="140.97" y="33.02" size="1.778" layer="95"/>
@@ -20780,7 +20780,7 @@ Max gain: 3.526 x</text>
 <attribute name="VALUE" x="57.658" y="34.29" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND20" gate="1" x="60.96" y="20.32" smashed="yes"/>
-<instance part="GND21" gate="1" x="116.84" y="22.86" smashed="yes"/>
+<instance part="GND21" gate="1" x="116.84" y="60.96" smashed="yes" rot="R180"/>
 <instance part="SUPPLY17" gate="G$1" x="127" y="15.24" smashed="yes">
 <attribute name="VALUE" x="123.825" y="10.541" size="1.778" layer="96"/>
 </instance>
@@ -21188,7 +21188,7 @@ Max gain: 3.526 x</text>
 <segment>
 <pinref part="R40" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="116.84" y1="27.94" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="55.88" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q8" gate="1" pin="C"/>
@@ -21834,7 +21834,7 @@ Max gain: 3.526 x</text>
 <wire x1="114.3" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="40.64" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="38.1" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
 <junction x="116.84" y="40.64"/>
 </segment>
 </net>
