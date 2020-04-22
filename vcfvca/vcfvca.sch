@@ -22709,6 +22709,12 @@ Max gain: 3.526 x ?</text>
 <text x="129.54" y="236.22" size="1.778" layer="91">4-pole VCF</text>
 <text x="284.48" y="198.12" size="1.778" layer="91">VCA</text>
 <text x="266.7" y="124.46" size="1.778" layer="91">Resonance feedback</text>
+<text x="172.72" y="233.68" size="1.778" layer="91">Kenobi (based on OB-1)
+4-pole VCF/VCA
+
+Tuwuh S Wibowo
+ACMS Spring 2020
+Apr '20</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$3" x="233.68" y="241.3" smashed="yes" rot="MR270">
