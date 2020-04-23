@@ -22757,7 +22757,7 @@ Apr '20</text>
 </instance>
 <instance part="Q3" gate="1" x="215.9" y="208.28" smashed="yes">
 <attribute name="NAME" x="220.98" y="213.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="220.98" y="195.58" size="1.778" layer="96"/>
+<attribute name="VALUE" x="220.98" y="210.82" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="B" x="320.04" y="180.34" smashed="yes" rot="MR180">
 <attribute name="NAME" x="322.58" y="183.515" size="1.778" layer="95"/>
